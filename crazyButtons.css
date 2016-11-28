@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: red;
+}
+
+#button {
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 50%;
+  border: 2px solid lightblue;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.coloredButton {
+  top: 15%;
+}
+
+.invisibleButton {
+  top: 45%;
+}
+
+.squareItButton {
+  top: 30%;
+}
+.thanksgivingButton {
+  top: 60%;
+}
+
+.moveItButton {
+  top: 75%;
+}
+
+button:focus {outline:0;}
