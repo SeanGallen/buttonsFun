@@ -1,5 +1,5 @@
 var counter = 0;
-var fatCounter = 0;
+var foodCounter = 0;
 var shapeCounter = 0;
 
 var randomColor = function () {
@@ -20,16 +20,16 @@ $(document).ready(function(){
 
   $(".coloredButton").click(function(){
     if (counter % 2 === 0){
-      $("html, body").css("background-color", randomColor());
+      $("html, body").css({ "background": "linear-gradient("+ randomColor() + "," + randomColor()+")" });
     }
     else {
-      $("html, body").css("background-color", "red")
+      $("html, body").css({ "background": "linear-gradient(#B24592, #F15F79)" });
     }
     counter++;
   });
 
   $(".thanksgivingButton").click(function(){
-    if (fatCounter % 2 === 0 )
+    if (foodCounter % 2 === 0 )
     {
       $("button").width(100).height(100);
     }
@@ -37,7 +37,7 @@ $(document).ready(function(){
     {
       $("button").width(84).height(91);
     }
-    fatCounter++;
+    foodCounter++;
   });
 
   $(".squareItButton").click(function(){
@@ -56,8 +56,8 @@ $(document).ready(function(){
       anime({
         targets: '#button',
         rotate: {
-          value: 300,
-          duration: 1500,
+          value: 480,
+          duration: 3000,
           easing: 'easeInOutQuad'
         },
         translateX: [50, 250],
