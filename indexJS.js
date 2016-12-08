@@ -20,10 +20,10 @@ $(document).ready(function(){
 
   $(".coloredButton").click(function(){
     if (counter % 2 === 0){
-      $("html, body").css({ "background": "linear-gradient("+ randomColor() + "," + randomColor()+")" });
+      $("html, body").css({ background: "linear-gradient("+ randomColor() + "," + randomColor()+")" });
     }
     else {
-      $("html, body").css({ "background": "linear-gradient(#B24592, #F15F79)" });
+      $("html, body").css({ background: "linear-gradient(#B24592, #F15F79)" });
     }
     counter++;
   });
